@@ -5,6 +5,10 @@
     font-family: 'Playfair Display', serif;
     user-select: none;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   #logo {
     height: 100px;

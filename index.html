@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-End Workshop</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+  <nav id="navbar">
+    <div><img id="logo" src="./ASSETS/Site Logo.png" alt=""></div>
+
+    <div id="options-container">
+      <div class="options">Home</div>
+      <div class="options">Categories</div>
+      <div class="options">Products</div>
+      <div class="options">Customers</div>
+      <div class="options">Contact Us</div>
+    </div>
+
+    <div id="account-container">
+      <img id="final-cart" src="./ASSETS/Final Cart.png" alt="">
+      <img id="account" draggable="false" class="style-scope yt-img-shadow" alt="Avatar image" height="32" width="32"
+        src="https://yt3.ggpht.com/Q6X6iyBgMKIu1_D5Ty0Jk3qwv4w6tp6ks3ZITH2jfIJFPueGe-NTdUs0cSHoKtDfD560sCL-=s88-c-k-c0x00ffffff-no-rj">
+    </div>
+  </nav>
+
+
+
+  <div id="home">
+    <div id="home-text">
+      <p id="welcome">Welcome to COMPANY FARMS</p>
+      <p id="year">Since 1905</p>
+      <div id="legacy">
+        <p> Discover the vibrant flavors of India's heartlands. Our farm-fresh treasures, nurtured by
+          dedicated farmers, await you for a taste of true essence and sustainability. Experience the farm-to-fork
+          magic!
+          From the bountiful fields of India to your doorstep, our curated selection of farm products is a tribute to
+          the
+          hardworking farmers who grow India's pride. </p>
+      </div>
+      <p id="quote">"Bringing Nature's Bounty to Your Table"</p>
+      <p id="tags">#FreshProduce #HealthyChoices #EconomicBills</p>
+    </div>
+
+    <div id="home-image">
+      <img src="./ASSETS/Home Image.jpg" alt="">
+    </div>
+  </div>
+
+
+
+  <div id="categories">
+    <div id="heading">
+      <p>Browse Our Hottest</p>
+      <p id="green-color">Categories</p>
+    </div>
+
+    <div id="category-names">
+      <div class="names">
+        <img src="./ASSETS/Categories/Fruits.png" alt="">
+        <p>FRUITS</p>
+      </div>
+      <div class="names">
+        <img src="./ASSETS/Categories/Vegetables.png" alt="">
+        <p>VEGETABLES</p>
+      </div>
+      <div class="names">
+        <img src="./ASSETS/Categories/Dairy.png" alt="">
+        <div id="dairy-flex">
+          <p>DAIRY</p>
+          <p>PRODUCTS</p>
+        </div>
+
+      </div>
+      <div class="names">
+        <img src="./ASSETS/Categories/Spices.png" alt="">
+        <p>SPICES</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="products">
+    <div id="heading">
+      <p>Our Popular</p>
+      <p id="green-color">Products</p>
+    </div>
+
+    <p id="fruits" class="sub-heading">FRUITS</p>
+
+    <div id="grid-container">
+      <div class="one-row-grid">
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Fruits/Apple.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Apple</p>
+            <div class="price">
+              <p>Rs.120</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Fruits/Guava.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Guava</p>
+            <div class="price">
+              <p>Rs.70</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Fruits/Chiku.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Chiku</p>
+            <div class="price">
+              <p>Rs.90</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Fruits/Banana.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Banana</p>
+            <div class="price">
+              <p>Rs.50</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Fruits/Mango.png  " alt="">
+          <div class="item-details">
+            <p class="item-name">Mango</p>
+            <div class="price">
+              <p>Rs.70</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="vegetables" class="sub-heading">VEGETABLES</p>
+
+    <div id="grid-container">
+      <div id="vegetables-grid">
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Vegetables/Beans.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Beans</p>
+            <div class="price">
+              <p>Rs.90</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Vegetables/Brocoli.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Brocoli</p>
+            <div class="price">
+              <p>Rs.150</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Carrot.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Carrot</p>
+            <div class="price">
+              <p>Rs.60</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Cauliflower.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Cauliflower</p>
+            <div class="price">
+              <p>Rs.80</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Ginger.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Ginger</p>
+            <div class="price">
+              <p>Rs.180</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Onion.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Onion</p>
+            <div class="price">
+              <p>Rs.40</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Peas.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Peas</p>
+            <div class="price">
+              <p>Rs.110</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Potato.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Potato</p>
+            <div class="price">
+              <p>Rs.60</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Spinach.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Spinach</p>
+            <div class="price">
+              <p>Rs.130</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+        <div class="items"><img class="item-img" src="./ASSETS/Vegetables/Tomato.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Tomato</p>
+            <div class="price">
+              <p>Rs.30</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div></div>
+      </div>
+    </div>
+
+    <p id="dairy" class="sub-heading">DAIRY PRODUCTS</p>
+
+    <div id="grid-container">
+      <div class="one-row-grid">
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Dairy/Butter.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Butter</p>
+            <div class="price">
+              <p>Rs.120</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Dairy/Cheese.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Cheese</p>
+            <div class="price">
+              <p>Rs.110</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Dairy/Milk.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Milk</p>
+            <div class="price">
+              <p>Rs.90</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Dairy/Paneer.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Paneer</p>
+            <div class="price">
+              <p>Rs.150</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Dairy/Yoghurt.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Yoghurt</p>
+            <div class="price">
+              <p>Rs.100</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="spices" class="sub-heading">SPICES</p>
+
+    <div id="grid-container">
+      <div class="one-row-grid" id="spices-grid">
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Spices/Red-Chilly.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Red Chilly</p>
+            <div class="price">
+              <p>Rs.45</p>  
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Spices/Clove.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Clove</p>
+            <div class="price">
+              <p>Rs.190</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Spices/Turmeric.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Turmeric</p>
+            <div class="price">
+              <p>Rs.55</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Spices/Cardamom.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Cardamom</p>
+            <div class="price">
+              <p>Rs.170</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <img class="item-img" src="./ASSETS/Spices/Pepper.png" alt="">
+          <div class="item-details">
+            <p class="item-name">Pepper</p>
+            <div class="price">
+              <p>Rs.130</p>
+              <img class="cart" src="./ASSETS/cart.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div>
+    <div id="customers">
+      <div id="heading">
+        <p>Why Loved By</p>
+        <p id="green-color">Customers</p>
+      </div>
+
+      <div id="feedback">
+        <div class="people">
+          <div class="quote-container">
+            <img class="quote" src="./ASSETS/Start-Quote.png" alt="">
+          </div>
+
+          <div>
+            <img class="rating" src="./ASSETS/4.5Rating.png" alt="">
+          </div>
+
+          <p class="comment">The user-friendly interface made my shopping experience a breeze. I appreciate the seamless
+            navigation and quick checkout process!</p>
+
+          <div>
+            <img class="quote" src="./ASSETS/End-Quote.png" alt="">
+          </div>
+
+          <div class="profile">
+            <img class="profile-img" src="./ASSETS/P-1.jpg" alt="">
+            <p class="profile-name">Mayur Shetty</p>
+          </div>
+
+        </div>
+
+
+
+        <div class="people">
+          <div class="quote-container">
+            <img class="quote" src="./ASSETS/Start-Quote.png" alt="">
+          </div>
+
+          <div>
+            <img class="rating" src="./ASSETS/4Rating.png" alt="">
+          </div>
+
+          <p class="comment">The range of products available exceeded my expectations. The detailed descriptions and
+            high-quality images helped me make informed choices easily.</p>
+
+          <div>
+            <img class="quote" src="./ASSETS/End-Quote.png" alt="">
+          </div>
+
+          <div class="profile">
+            <img class="profile-img" src="./ASSETS/P-2.jpg" alt="">
+            <p class="profile-name">Shrishti Sharma</p>
+          </div>
+
+        </div>
+
+
+
+        <div class="people">
+          <div class="quote-container">
+            <img class="quote" src="./ASSETS/Start-Quote.png" alt="">
+          </div>
+
+          <div>
+            <img class="rating" src="./ASSETS/4Rating.png" alt="">
+          </div>
+
+          <p class="comment">Kudos on the prompt and reliable delivery service. My order arrived in perfect condition
+            and right on time. I'll definitely be back for more!</p>
+
+          <div>
+            <img class="quote" src="./ASSETS/End-Quote.png" alt="">
+          </div>
+
+          <div class="profile">
+            <img class="profile-img" src="./ASSETS/P-3.jpg" alt="">
+            <p class="profile-name">Aditya Kumar</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contacts">
+      <p id="contact-us">Contact Us</p>
+      <div id="contact-container">
+        <div id="contact-details">
+          <p>Email: aaryanpanda04@gmail.com </p>
+          <p> Phone: +91 8114720014 </p>
+          <p>Monday to Friday: 9:00 AM - 6:00 PM (GMT)</p>
+        </div>
+        <div class="social-media">
+          <p>Follow Us On:</p>
+          <div>
+            <img src="./ASSETS/facebook.png" alt="">
+            <img src="./ASSETS/twitter.png" alt="">
+            <img src="./ASSETS/instagram.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+</body>
+
+</html>
